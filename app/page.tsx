@@ -1,91 +1,51 @@
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-import styles from './page.module.css'
-
-const inter = Inter({ subsets: ['latin'] })
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+    <main className="bg-black fixed inset-0 flex items-center justify-center">
+      <div className="bg-white">
+        <form className="mx-12 my-8 flex flex-col gap-4">
+          <label htmlFor="username" className="font-semibold">
+            Nama atau Alamat Email
+          </label>
+          <input
+            type="text"
+            id="username"
+            className="border border-solid border-black h-12 w-72 px-4"
+          />
+          <label htmlFor="password" className="font-semibold">
+            Kata Sandi
+          </label>
+          <input
+            type="password"
+            id="password"
+            className="border border-solid border-black h-12 w-72 px-4"
+          />
+          <div className="flex items-center gap-2">
+            <input type="checkbox" id="remember" className="scale-125" />
+            <label htmlFor="remember">Ingat Saya</label>
+          </div>
+          <Link
+            href="/"
+            className="bg-gold hover:bg-goldHover transition-all duration-300 ease-linear h-12 w-full flex items-center justify-center font-extrabold text-white"
           >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-        <div className={styles.thirteen}>
-          <Image src="/thirteen.svg" alt="13" width={40} height={31} priority />
-        </div>
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://beta.nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+            Masuk
+          </Link>
+          <Link
+            href="/"
+            className="text-sm text-center text-grey font-bold underline hover:no-underline"
+          >
+            Lupa kata sandi?
+          </Link>
+        </form>
+        <hr className="border border-solid border-black65" />
+        <p className="my-4 text-center text-sm font-bold">
+          Belum punya akun?{" "}
+          <Link href="/" className="underline hover:no-underline text-gold">
+            Sign up
+          </Link>
+        </p>
       </div>
     </main>
-  )
+  );
 }
