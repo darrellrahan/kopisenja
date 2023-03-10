@@ -10,7 +10,7 @@ function Header() {
   const [isDropdown, setIsDropdown] = useState(false);
 
   return (
-    <header className="absolute top-0 inset-x-0 bg-black50 px-12 py-4 text-white flex items-center justify-between">
+    <header className="absolute top-0 inset-x-0 bg-black50 px-16 py-4 text-white flex items-center justify-between">
       <div className="logo-area">
         <Link href="/">
           <Image
@@ -45,7 +45,7 @@ function Header() {
                         height="9"
                         viewBox="0 0 20 9"
                         xmlns="http://www.w3.org/2000/svg"
-                        className="transition-all duration-300 ease-linear"
+                        className="stroke-gold"
                       >
                         <path
                           d="M18.8975 7.62253L9.18155 1.37743L0.999733 7.62253"
@@ -90,9 +90,11 @@ function Header() {
       <div className="icon-area flex items-center gap-8">
         {headerIcons.map((item) =>
           !item.url ? (
-            <button>{item.icon}</button>
+            <button key={item.id}>{item.icon}</button>
           ) : (
-            <Link href={item.url}>{item.icon}</Link>
+            <Link key={item.id} href={item.url}>
+              {item.icon}
+            </Link>
           )
         )}
       </div>

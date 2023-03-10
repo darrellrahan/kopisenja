@@ -10,7 +10,7 @@ function ShopDropdown() {
           <li key={item.id}>
             <Link
               href={item.url}
-              className="hover:text-black font-bold transition-all duration-300 ease-linear block"
+              className="hover:text-whiteHover font-bold transition-all duration-300 ease-linear block"
             >
               {item.text}
             </Link>
