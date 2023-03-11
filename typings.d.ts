@@ -15,3 +15,11 @@ export type HeaderIcons = {
   url?: string;
   icon: ReactNode.SVGProps<SVGSVGElement>;
 };
+
+export type MenuCardProps = {
+  id: number;
+  url: string;
+  name: string;
+  img: string;
+  price: number;
+};

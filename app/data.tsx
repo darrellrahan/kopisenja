@@ -1,4 +1,4 @@
-import { HeaderIcons, NavLink, ShopDropdown } from "../typings";
+import { HeaderIcons, MenuCardProps, NavLink, ShopDropdown } from "../typings";
 import React from "react";
 
 export const navLink: NavLink[] = [
@@ -69,5 +69,57 @@ export const headerIcons: HeaderIcons[] = [
         />
       </svg>
     ),
+  },
+];
+
+export const homeMenuData: MenuCardProps[] = [
+  {
+    id: 1,
+    url: "/menu/hot-cappucino",
+    img: "assets/svg/hotcappuccino.svg",
+    name: "Hot Cappuccino",
+    price: 40000,
+  },
+  {
+    id: 2,
+    url: "/menu/americano",
+    img: "assets/svg/americano.svg",
+    name: "Americano",
+    price: 28000,
+  },
+  {
+    id: 3,
+    url: "/menu/espresso",
+    img: "assets/svg/espresso.svg",
+    name: "Espresso",
+    price: 25000,
+  },
+  {
+    id: 4,
+    url: "/menu/caramel-frappe",
+    img: "assets/svg/icecaramel.svg",
+    name: "Ice Caramel Frappe",
+    price: 50000,
+  },
+  {
+    id: 5,
+    url: "/menu/long-black",
+    img: "assets/svg/longblack.svg",
+    name: "Long Black",
+    price: 30000,
+  },
+  {
+    id: 6,
+    url: "/menu/affogato",
+    img: "assets/svg/affogato.svg",
+    name: "Affogato",
+    price: 60000,
+  },
+  {
+    id: 7,
+    url: "/menu/cappuccino-caramel",
+    img: "assets/svg/cappucinocaramel.svg",
+    name: "Cappuccino Caramel",
+    price: 55000,
   },
 ];

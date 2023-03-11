@@ -10,7 +10,7 @@ function Header() {
   const [isDropdown, setIsDropdown] = useState(false);
 
   return (
-    <header className="absolute top-0 inset-x-0 bg-black50 px-16 py-4 text-white flex items-center justify-between">
+    <header className="fixed top-0 inset-x-0 bg-black px-16 py-4 text-white flex items-center justify-between">
       <div className="logo-area">
         <Link href="/">
           <Image
@@ -73,10 +73,10 @@ function Header() {
                     className={item.text === "Beranda" ? "text-gold" : ""}
                   >
                     {item.text === "Beranda" ? (
-                      <div className="relative">
+                      <span className="relative">
                         {item.text}
-                        <div className="w-2 h-2 bg-gold absolute top-7 left-1/2 right-1/2 rounded-full" />
-                      </div>
+                        <span className="w-2 h-2 bg-gold absolute top-7 left-1/2 right-1/2 rounded-full" />
+                      </span>
                     ) : (
                       item.text
                     )}
