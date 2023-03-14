@@ -1,3 +1,7 @@
+import { IconType } from "react-icons";
+import { IconBaseProps } from "react-icons/lib/esm/iconBase";
+import { IconContext } from "react-icons/lib/esm/iconContext";
+
 export type NavLink = {
   id: number;
   text: string;
@@ -13,7 +17,7 @@ export type ShopDropdown = {
 export type HeaderIcons = {
   id: number;
   url?: string;
-  icon: ReactNode.SVGProps<SVGSVGElement>;
+  icon: IconType;
 };
 
 export type MenuCardProps = {
@@ -22,4 +26,18 @@ export type MenuCardProps = {
   name: string;
   img: string;
   price: number;
+};
+
+export type OpenHour = {
+  id: number;
+  day: string;
+  hour: string;
+};
+
+export type Team = {
+  id: number;
+  image: string;
+  socials: { id: number; icon: IconType; url: string }[];
+  name: string;
+  title: string;
 };
