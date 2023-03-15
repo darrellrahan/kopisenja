@@ -28,6 +28,11 @@ export type MenuCardProps = {
   price: number;
 };
 
+export type Location = {
+  id: number;
+  location: string;
+};
+
 export type OpenHour = {
   id: number;
   day: string;

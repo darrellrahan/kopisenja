@@ -5,7 +5,7 @@ import Link from "next/link";
 
 function Team() {
   return (
-    <div className="text-white space-y-8">
+    <div className="text-white space-y-8 py-8">
       <Image
         src="assets/svg/tim-line.svg"
         alt="Kopi Senja"
@@ -13,7 +13,7 @@ function Team() {
         height={58}
         className="w-full"
       />
-      <div className="flex justify-center gap-72">
+      <div className="flex justify-center gap-48">
         {team.map((person) => (
           <div key={person.id} className="space-y-6">
             <div>

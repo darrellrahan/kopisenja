@@ -12,6 +12,7 @@ module.exports = {
     extend: {
       fontFamily: {
         jakartaSans: ["var(--font-jakartaSans)"],
+        pompiere: ["var(--font-pompiere)"],
       },
       colors: {
         gold: "#C5992E",

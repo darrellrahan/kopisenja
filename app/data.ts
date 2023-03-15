@@ -1,5 +1,6 @@
 import {
   HeaderIcons,
+  Location,
   MenuCardProps,
   NavLink,
   OpenHour,
@@ -93,6 +94,24 @@ export const homeMenuData: MenuCardProps[] = [
     img: "assets/svg/cappucinocaramel.svg",
     name: "Cappuccino Caramel",
     price: 55000,
+  },
+];
+
+export const locations: Location[] = [
+  {
+    id: 1,
+    location:
+      "Jl. Kliningan No.6, Turangga, Kec. Lengkong, Kota Bandung, Jawa Barat 40264",
+  },
+  {
+    id: 2,
+    location:
+      "Jl. Slontongan No.19, Turangga, Kec. Kujangsari, Kota Bandung, Jawa Barat 40264",
+  },
+  {
+    id: 3,
+    location:
+      "Jl. Embah Malim No.69, Babakan Sari, Kec. Kiaracondong, Kota Bandung, Jawa Barat 40264",
   },
 ];
 

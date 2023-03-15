@@ -1,5 +1,5 @@
 import React from "react";
-import { shopDropdown } from "../data";
+import { shopDropdown } from "../../data";
 import Link from "next/link";
 
 function ShopDropdown() {
