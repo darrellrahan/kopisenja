@@ -10,7 +10,7 @@ const pompiere = Pompiere({
 
 function Quote() {
   return (
-    <div className="space-y-10">
+    <div className="space-y-10 mb-32">
       <Image
         src="assets/svg/quote-line.svg"
         alt="quote"

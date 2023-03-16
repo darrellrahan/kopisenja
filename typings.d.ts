@@ -46,3 +46,22 @@ export type Team = {
   name: string;
   title: string;
 };
+
+export type FooterSocials = {
+  id: number;
+  url: string;
+  icon: IconType;
+};
+
+export type FooterLink = {
+  id: number;
+  text: string;
+  url: string;
+};
+
+export type FooterContact = {
+  id: number;
+  icon: IconType;
+  text: string;
+  url?: string;
+};

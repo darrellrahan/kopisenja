@@ -1,4 +1,7 @@
 import {
+  FooterContact,
+  FooterLink,
+  FooterSocials,
   HeaderIcons,
   Location,
   MenuCardProps,
@@ -13,7 +16,14 @@ import {
   AiOutlineMail,
   AiOutlineSearch,
   AiOutlineShoppingCart,
+  AiOutlineYoutube,
+  AiOutlineFacebook,
+  AiOutlineTwitter,
+  AiOutlineLinkedin,
+  AiOutlineWhatsApp,
 } from "react-icons/ai";
+import { BsTelephone } from "react-icons/bs";
+import { IoLocationOutline } from "react-icons/io5";
 import { RxPerson } from "react-icons/rx";
 
 export const navLink: NavLink[] = [
@@ -167,4 +177,40 @@ export const team: Team[] = [
     name: "Wulan Shavira Nopa",
     title: "UI/UX Designer",
   },
+];
+
+export const footerSocials: FooterSocials[] = [
+  { id: 1, icon: AiOutlineInstagram, url: "https://www.instagram.com" },
+  { id: 2, icon: AiOutlineYoutube, url: "https://www.youtube.com" },
+  { id: 3, icon: AiOutlineTwitter, url: "https://www.twitter.com" },
+  { id: 4, icon: AiOutlineFacebook, url: "https://www.facebook.com" },
+  { id: 5, icon: AiOutlineLinkedin, url: "https://www.linkedin.com" },
+  { id: 6, icon: AiOutlineWhatsApp, url: "https://www.whatsapp.com" },
+];
+
+export const footerAbout: FooterLink[] = [
+  { id: 1, text: "Tentang Kami", url: "/" },
+  { id: 2, text: "Tim", url: "/" },
+  { id: 3, text: "Karir", url: "/" },
+];
+
+export const footerContact: FooterContact[] = [
+  { id: 1, icon: BsTelephone, text: "+(62) 6653 8065" },
+  {
+    id: 2,
+    icon: AiOutlineMail,
+    text: "kopisenja@gmail.com",
+    url: "mailto:kopisenja@gmail.com",
+  },
+  {
+    id: 3,
+    icon: IoLocationOutline,
+    text: "Jl Kliningan no 69420, Kota Bandung",
+  },
+];
+
+export const footerLegal: FooterLink[] = [
+  { id: 1, text: "Ketentuan Penggunaan", url: "/" },
+  { id: 2, text: "Syarat & Ketentuan", url: "/" },
+  { id: 3, text: "Kebijakan Privasi", url: "/" },
 ];

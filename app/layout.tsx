@@ -7,7 +7,7 @@ export const metadata = {
 };
 
 const jakartaSans = Plus_Jakarta_Sans({
-  weight: ["400", "600", "700", "800"],
+  weight: ["300", "400", "600", "700", "800"],
   subsets: ["latin"],
   variable: "--font-jakartaSans",
 });
@@ -18,7 +18,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth">
       <body className={`${jakartaSans.className} bg-black`}>{children}</body>
     </html>
   );

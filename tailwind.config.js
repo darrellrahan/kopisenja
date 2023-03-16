@@ -40,6 +40,9 @@ module.exports = {
       gridTemplateColumns: {
         fluid: "repeat(auto-fit, minmax(15rem, 1fr));",
       },
+      fontSize: {
+        "1.6rem": "1.6rem",
+      },
     },
   },
   plugins: [],

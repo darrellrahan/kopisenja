@@ -87,7 +87,7 @@ function Header() {
           </ul>
         </nav>
       </div>
-      <div className="icon-area flex items-center gap-8 text-2xl">
+      <div className="icon-area flex items-center gap-8 text-3xl">
         {headerIcons.map((item) => {
           const Icon = item.icon;
           return !item.url ? (
