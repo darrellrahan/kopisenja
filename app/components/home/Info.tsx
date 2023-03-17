@@ -11,7 +11,7 @@ function Info() {
         alt="Kopi Senja"
         width={1208}
         height={56}
-        className="w-full"
+        className="w-full h-full"
       />
       <div className="grid grid-cols-2">
         <Image
@@ -19,7 +19,7 @@ function Info() {
           alt="Info"
           width={620}
           height={561}
-          className="w-full h-full"
+          className="w-full h-full object-cover"
         />
         <div className="bg-lighterBlack p-16 space-y-12 pt-16">
           <h1 className="font-extrabold text-4xl text-center text-gold">
@@ -59,7 +59,7 @@ function Info() {
           alt="Info"
           width={620}
           height={561}
-          className="w-full h-full"
+          className="w-full h-full object-cover"
         />
       </div>
     </div>
