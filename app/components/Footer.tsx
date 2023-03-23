@@ -23,7 +23,7 @@ function Footer() {
               />
               <button
                 type="submit"
-                className="bg-gold text-1.6rem font-bold text-black p-2 transition-all duration-300 ease-linear hover:bg-goldHover"
+                className="bg-gold text-1.6rem font-bold text-black p-2 transition-all duration-300 ease-linear hover:bg-gold99"
               >
                 <BsArrowRight />
               </button>

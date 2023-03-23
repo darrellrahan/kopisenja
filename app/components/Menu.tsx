@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
-import { homeMenuData } from "../../data";
-import MenuCard from "../others/MenuCard";
+import { homeMenuData } from "../data";
+import MenuCard from "./MenuCard";
 
 function Menu() {
   return (

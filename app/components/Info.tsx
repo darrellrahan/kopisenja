@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import { locations, openHour } from "../../data";
+import { locations, openHour } from "../data";
 import { IoLocationSharp } from "react-icons/io5";
 
 function Info() {
@@ -27,7 +27,7 @@ function Info() {
           </h1>
           <div className="space-y-10">
             {locations.map((data) => (
-              <div key={data.id} className="text-white text-2xl font-bold">
+              <div key={data.id} className="text-white text-2xl">
                 <p className="flex gap-4 items-center">
                   <span className="text-4xl">
                     <IoLocationSharp />
@@ -46,9 +46,9 @@ function Info() {
             {openHour.map((data) => (
               <div
                 key={data.id}
-                className="flex justify-between items-center text-2xl font-bold text-white"
+                className="flex justify-between items-center text-2xl text-white"
               >
-                <p>{data.day}</p>
+                <p className="font-bold">{data.day}</p>
                 <p>{data.hour}</p>
               </div>
             ))}

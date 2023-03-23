@@ -4,7 +4,7 @@ import Link from "next/link";
 
 function Hero() {
   return (
-    <div className="top-0 inset-x-0 bg-heroBg bg-contain bg-no-repeat bg-right h-650px flex flex-col justify-center gap-16 px-16">
+    <div className="bg-heroBg bg-contain bg-no-repeat bg-right h-650px flex flex-col justify-center gap-16 px-16">
       <div className="space-y-4">
         <div className="space-y-4">
           <h1 className="text-white font-bold text-4xl tracking-wider">

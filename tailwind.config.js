@@ -16,18 +16,13 @@ module.exports = {
       },
       colors: {
         gold: "#C5992E",
-        goldHover: "#C5992E99",
-        gold30: "#C5992E90",
         grey: "#9d9d9d",
-        black65: "#00000065",
-        black50: "#00000070",
         lighterBlack: "#5a5a5a50",
-        whiteHover: "#ffffff99",
       },
       backgroundImage: {
         heroBg:
           "linear-gradient(to right,#000 0%,#00000000 100%),url('/assets/svg/hero-bg.svg')",
-        infoBg: "url('/assets/webp/info-bg.webp')",
+        loginBg: "url('/assets/svg/login-bg.svg')",
       },
       spacing: {
         "650px": "650px",
@@ -42,6 +37,9 @@ module.exports = {
       },
       fontSize: {
         "1.6rem": "1.6rem",
+      },
+      dropShadow: {
+        "3xl": "-2px 4px 3px #000000",
       },
     },
   },

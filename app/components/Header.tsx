@@ -1,6 +1,6 @@
 "use client";
 
-import { headerIcons, navLink } from "../../data";
+import { headerIcons, navLink } from "../data";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
@@ -10,7 +10,7 @@ function Header() {
   const [isDropdown, setIsDropdown] = useState(false);
 
   return (
-    <header className="fixed top-0 inset-x-0 bg-black px-16 py-4 text-white flex items-center justify-between">
+    <header className="fixed top-0 inset-x-0 bg-black px-16 py-4 text-white flex items-center justify-between z-50">
       <div className="logo-area">
         <Link href="/">
           <Image
