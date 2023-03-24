@@ -29,7 +29,7 @@ import { RxPerson } from "react-icons/rx";
 export const navLink: NavLink[] = [
   { id: 1, text: "Beranda", url: "/" },
   { id: 2, text: "Menu" },
-  { id: 3, text: "Kontak", url: "/contact" },
+  { id: 3, text: "Reservasi", url: "/reservation" },
 ];
 
 export const shopDropdown: ShopDropdown[] = [

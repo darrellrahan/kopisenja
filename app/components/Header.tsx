@@ -5,9 +5,12 @@ import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
 import ShopDropdown from "./ShopDropdown";
+import { usePathname } from "next/navigation";
 
 function Header() {
   const [isDropdown, setIsDropdown] = useState(false);
+
+  console.log(usePathname());
 
   return (
     <header className="fixed top-0 inset-x-0 bg-black px-16 py-4 text-white flex items-center justify-between z-50">
@@ -70,9 +73,9 @@ function Header() {
                 ) : (
                   <Link
                     href={item.url}
-                    className={item.text === "Beranda" ? "text-gold" : ""}
+                    className={usePathname() === item.url ? "text-gold" : ""}
                   >
-                    {item.text === "Beranda" ? (
+                    {usePathname() === item.url ? (
                       <span className="relative">
                         {item.text}
                         <span className="w-2 h-2 bg-gold absolute top-7 left-1/2 right-1/2 rounded-full" />
@@ -101,9 +104,18 @@ function Header() {
             <Link
               key={item.id}
               href={item.url}
-              className="hover:text-gold transition-all duration-300 ease-linear"
+              className={`${
+                usePathname() === item.url ? "text-gold" : ""
+              } hover:text-gold transition-all duration-300 ease-linear`}
             >
-              <Icon />
+              {usePathname() === item.url ? (
+                <span className="relative">
+                  <Icon />
+                  <span className="w-2 h-2 bg-gold absolute top-9 left-3 rounded-full" />
+                </span>
+              ) : (
+                <Icon />
+              )}
             </Link>
           );
         })}
