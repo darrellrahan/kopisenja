@@ -10,8 +10,6 @@ import { usePathname } from "next/navigation";
 function Header() {
   const [isDropdown, setIsDropdown] = useState(false);
 
-  console.log(usePathname());
-
   return (
     <header className="fixed top-0 inset-x-0 bg-black px-16 py-4 text-white flex items-center justify-between z-50">
       <div className="logo-area">
