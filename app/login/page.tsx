@@ -14,9 +14,9 @@ function page() {
   return (
     <main className="text-white min-h-screen">
       <Header />
-      <div className="absolute top-16 bottom-0 inset-x-0 grid grid-cols-2">
-        <div className="bg-loginBg bg-no-repeat bg-cover" />
-        <div className="mx-24 my-12 bg-lighterBlack h-fit py-8">
+      <div className="absolute top-16 bottom-0 inset-x-0 grid grid-cols-2 items-center">
+        <div className="bg-loginBg bg-no-repeat bg-cover h-full" />
+        <div className="mx-24 bg-lighterBlack h-fit py-8">
           <div className="mx-8 space-y-8">
             <div className="flex justify-center font-bold">
               <button
@@ -59,24 +59,25 @@ function page() {
                 className="bg-darkerBlack shadow-loginToggler rounded-50px p-4 pl-6 text-lg placeholder:text-grey"
               />
             </div>
-            <div>
-              <Link href="/">
+            <div className="flex justify-center">
+              <Link
+                href="/"
+                className="text-3xl text-black w-14 h-14 rounded-full bg-gold flex items-center justify-center hover:opacity-75 transition-all duration-300 ease-linear"
+              >
                 <BsArrowRight />
               </Link>
             </div>
           </div>
-          <Image
-            src="assets/svg/or.svg"
-            alt="or"
-            width={561}
-            height={25}
-            className="w-full my-4"
-          />
-          <div className="flex ml-8">
-            <button>
+          <div className="my-8 flex items-center justify-between gap-4">
+            <hr className="border border-grey w-full opacity-50" />
+            <span className="text-grey text-sm">OR</span>
+            <hr className="border border-grey w-full opacity-50" />
+          </div>
+          <div className="flex mx-8 justify-center gap-4">
+            <button className="text-xl text-gold w-12 h-12 rounded-full bg-darkerBlack shadow-loginToggler flex items-center justify-center hover:opacity-50 transition-all duration-300 ease-linear">
               <AiOutlineGoogle />
             </button>
-            <button>
+            <button className="text-xl text-gold w-12 h-12 rounded-full bg-darkerBlack shadow-loginToggler flex items-center justify-center hover:opacity-50 transition-all duration-300 ease-linear">
               <FaFacebookF />
             </button>
           </div>
