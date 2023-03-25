@@ -6,7 +6,6 @@ import Header from "../components/Header";
 import { BsArrowRight } from "react-icons/bs";
 import { AiOutlineGoogle } from "react-icons/ai";
 import { FaFacebookF } from "react-icons/fa";
-import Image from "next/image";
 
 function page() {
   const [currentForm, setCurrentForm] = useState("register");
@@ -15,7 +14,16 @@ function page() {
     <main className="text-white min-h-screen">
       <Header />
       <div className="absolute top-16 bottom-0 inset-x-0 grid grid-cols-2 items-center">
-        <div className="bg-loginBg bg-no-repeat bg-cover h-full" />
+        <div className="bg-loginBg bg-no-repeat bg-cover h-full flex flex-col justify-between py-24 px-12">
+          <h1 className="text-center text-5xl font-extrabold drop-shadow-3xl leading-tight">
+            Halaman <br />
+            Login & Register
+          </h1>
+          <p className="text-xl text-center drop-shadow-3xl">
+            Daftar atau masuk ke akun anda untuk menikmati fitur-fitur
+            eksklusif!
+          </p>
+        </div>
         <div className="mx-24 bg-lighterBlack h-fit py-8">
           <div className="mx-8 space-y-8">
             <div className="flex justify-center font-bold">
@@ -30,7 +38,7 @@ function page() {
                 Daftar
               </button>
               <button
-                className={`pl-12 pr-6 py-2 rounded-50px z-40 -translate-x-10 transition-all duration-300 ease-linear ${
+                className={`pl-14 pr-6 py-2 rounded-50px z-40 -translate-x-10 transition-all duration-300 ease-linear ${
                   currentForm === "login"
                     ? "bg-gold"
                     : "bg-darkerBlack shadow-loginToggler"
