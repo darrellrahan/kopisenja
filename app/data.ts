@@ -7,7 +7,6 @@ import {
   MenuCardProps,
   NavLink,
   OpenHour,
-  ShopDropdown,
   Team,
 } from "../typings";
 import {
@@ -28,14 +27,8 @@ import { RxPerson } from "react-icons/rx";
 
 export const navLink: NavLink[] = [
   { id: 1, text: "Beranda", url: "/" },
-  { id: 2, text: "Menu" },
+  { id: 2, text: "Menu", url: "/menu" },
   { id: 3, text: "Reservasi", url: "/reservation" },
-];
-
-export const shopDropdown: ShopDropdown[] = [
-  { id: 1, text: "Menu", url: "/menu" },
-  { id: 2, text: "Checkout", url: "/checkout" },
-  { id: 3, text: "Keranjang", url: "/cart" },
 ];
 
 export const headerIcons: HeaderIcons[] = [

@@ -1,10 +1,10 @@
 import Header from "./components/Header";
-import Hero from "./components/Hero";
-import About from "./components/About";
-import Menu from "./components/Menu";
-import Info from "./components/Info";
-import Team from "./components/Team";
-import Quote from "./components/Quote";
+import Hero from "./components/home/Hero";
+import About from "./components/home/About";
+import Menu from "./components/home/Menu";
+import Info from "./components/home/Info";
+import Team from "./components/home/Team";
+import Quote from "./components/home/Quote";
 import Footer from "./components/Footer";
 
 export default function Home() {
@@ -18,8 +18,8 @@ export default function Home() {
         <Info />
         <Team />
         <Quote />
-        <Footer />
       </div>
+      <Footer />
     </main>
   );
 }

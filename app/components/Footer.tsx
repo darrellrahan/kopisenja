@@ -10,7 +10,7 @@ import { BsArrowRight } from "react-icons/bs";
 
 function Footer() {
   return (
-    <div className="text-white pt-32 pb-8 space-y-24">
+    <footer className="absolute bottom-auto inset-x-16 pt-32 pb-8 space-y-24">
       <div className="flex justify-between">
         <div className="space-y-12 text-center w-72">
           <div className="space-y-4">
@@ -114,7 +114,7 @@ function Footer() {
           &copy; {new Date().getFullYear()} Kopi Senja
         </p>
       </div>
-    </div>
+    </footer>
   );
 }
 

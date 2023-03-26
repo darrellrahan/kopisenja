@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import { locations, openHour } from "../data";
+import { locations, openHour } from "../../data";
 import { IoLocationSharp } from "react-icons/io5";
 
 function Info() {

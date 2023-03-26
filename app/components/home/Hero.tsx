@@ -25,7 +25,7 @@ function Hero() {
       <div>
         <Link
           href="/menu"
-          className="bg-gold text-white font-bold p-4 rounded-35px transition-all duration-300 ease-linear hover:opacity-75"
+          className="bg-gold text-white font-bold py-3 px-4 rounded-35px transition-all duration-300 ease-linear hover:opacity-75"
         >
           Pesan sekarang
         </Link>

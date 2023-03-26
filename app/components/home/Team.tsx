@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { team } from "../data";
+import { team } from "../../data";
 import Link from "next/link";
 
 function Team() {

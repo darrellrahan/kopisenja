@@ -5,12 +5,6 @@ import { IconContext } from "react-icons/lib/esm/iconContext";
 export type NavLink = {
   id: number;
   text: string;
-  url?: string;
-};
-
-export type ShopDropdown = {
-  id: number;
-  text: string;
   url: string;
 };
 

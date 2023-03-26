@@ -19,14 +19,17 @@ module.exports = {
         grey: "#9d9d9d",
         lighterBlack: "#5a5a5a50",
         darkerBlack: "#161616",
+        darkerBlack90: "#16161690",
       },
       backgroundImage: {
         heroBg:
           "linear-gradient(to right,#000 0%,#00000000 100%),url('/assets/svg/hero-bg.svg')",
         loginBg: "url('/assets/svg/login-bg.svg')",
+        menuHeroBg: "url('/assets/svg/menu-hero-bg.svg')",
       },
       spacing: {
         "650px": "650px",
+        "480px": "480px",
         "46.5%": "46.5%",
       },
       borderRadius: {
