@@ -5,6 +5,7 @@ import {
   HeaderIcons,
   Location,
   MenuCardProps,
+  MenuSidebar,
   NavLink,
   OpenHour,
   Team,
@@ -206,4 +207,13 @@ export const footerLegal: FooterLink[] = [
   { id: 1, text: "Ketentuan Penggunaan", url: "/" },
   { id: 2, text: "Syarat & Ketentuan", url: "/" },
   { id: 3, text: "Kebijakan Privasi", url: "/" },
+];
+
+export const menuSidebar: MenuSidebar[] = [
+  { id: 1, text: "Black Coffee", amount: 7 },
+  { id: 2, text: "Cappuccino", amount: 6 },
+  { id: 3, text: "Robusta", amount: 5 },
+  { id: 4, text: "Macchiato", amount: 9 },
+  { id: 5, text: "Red Eye", amount: 13 },
+  { id: 6, text: "Flat White", amount: 5 },
 ];

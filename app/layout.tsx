@@ -1,5 +1,6 @@
 import "./globals.css";
 import { Plus_Jakarta_Sans } from "next/font/google";
+import { AppProvider } from "./context";
 
 export const metadata = {
   title: "Kopi Senja",
@@ -18,10 +19,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="scroll-smooth">
-      <body className={`${jakartaSans.className} bg-black text-white`}>
-        {children}
-      </body>
-    </html>
+    <AppProvider>
+      <html lang="en" className="scroll-smooth">
+        <body className={`${jakartaSans.className} bg-black text-white`}>
+          {children}
+        </body>
+      </html>
+    </AppProvider>
   );
 }

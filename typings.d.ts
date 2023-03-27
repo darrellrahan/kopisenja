@@ -59,3 +59,9 @@ export type FooterContact = {
   text: string;
   url?: string;
 };
+
+export type MenuSidebar = {
+  id: number;
+  text: string;
+  amount: number;
+};
