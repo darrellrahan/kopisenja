@@ -1,14 +1,24 @@
 "use client";
 
+import { MenuCardProps } from "@/typings";
 import React, { useContext, useState } from "react";
+import { menuSidebar } from "./data";
 
 type GlobalContextType = {
-  currentMenuCategory: string;
-  setCurrentMenuCategory: React.Dispatch<React.SetStateAction<string>>;
+  currentMenuCategory: {
+    category: string;
+    menu: MenuCardProps[];
+  };
+  setCurrentMenuCategory: React.Dispatch<
+    React.SetStateAction<{
+      category: string;
+      menu: MenuCardProps[];
+    }>
+  >;
 };
 
 const GlobalContext = React.createContext<GlobalContextType>({
-  currentMenuCategory: "",
+  currentMenuCategory: { category: "", menu: [] },
   setCurrentMenuCategory() {},
 });
 
@@ -17,8 +27,10 @@ export function useGlobalContext() {
 }
 
 export function AppProvider({ children }: { children: React.ReactNode }) {
-  const [currentMenuCategory, setCurrentMenuCategory] =
-    useState<string>("Black Coffee");
+  const [currentMenuCategory, setCurrentMenuCategory] = useState({
+    category: menuSidebar[0].name,
+    menu: menuSidebar[0].menus,
+  });
 
   return (
     <GlobalContext.Provider

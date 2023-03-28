@@ -210,10 +210,85 @@ export const footerLegal: FooterLink[] = [
 ];
 
 export const menuSidebar: MenuSidebar[] = [
-  { id: 1, text: "Black Coffee", amount: 7 },
-  { id: 2, text: "Cappuccino", amount: 6 },
-  { id: 3, text: "Robusta", amount: 5 },
-  { id: 4, text: "Macchiato", amount: 9 },
-  { id: 5, text: "Red Eye", amount: 13 },
-  { id: 6, text: "Flat White", amount: 5 },
+  {
+    id: 1,
+    name: "Special",
+    menus: [
+      {
+        id: 1,
+        url: "/menu/irish",
+        img: "assets/svg/irish.svg",
+        name: "Irish Coffee",
+        price: 75000,
+      },
+      {
+        id: 2,
+        url: "/menu/premiumroast",
+        img: "assets/svg/premiumroast.svg",
+        name: "Premium Roast",
+        price: 65000,
+      },
+      {
+        id: 3,
+        url: "/menu/lungo",
+        img: "assets/svg/lungo.svg",
+        name: "Lungo",
+        price: 55000,
+      },
+      {
+        id: 4,
+        url: "/menu/cortado",
+        img: "assets/svg/cortado.svg",
+        name: "Cortado",
+        price: 50000,
+      },
+    ],
+  },
+  {
+    id: 2,
+    name: "Black Coffee",
+    menus: [
+      {
+        id: 1,
+        url: "/menu/espresso",
+        img: "assets/svg/espresso.svg",
+        name: "Espresso",
+        price: 25000,
+      },
+      {
+        id: 2,
+        url: "/menu/americano",
+        img: "assets/svg/americano.svg",
+        name: "Americano",
+        price: 28000,
+      },
+      {
+        id: 3,
+        url: "/menu/longblack",
+        img: "assets/svg/longblack.svg",
+        name: "Long Black",
+        price: 30000,
+      },
+      {
+        id: 4,
+        url: "/menu/ristretto",
+        img: "assets/svg/ristretto.svg",
+        name: "Ristretto",
+        price: 32000,
+      },
+    ],
+  },
+  {
+    id: 3,
+    name: "White Coffee",
+    menus: [
+      {
+        id: 1,
+        url: "/menu/flatwhite",
+        img: "assets/svg/flatwhite.svg",
+        name: "Flat White",
+        price: 55000,
+      },
+    ],
+  },
 ];

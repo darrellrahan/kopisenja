@@ -8,17 +8,25 @@ function Sidebar() {
   const { currentMenuCategory, setCurrentMenuCategory } = useGlobalContext();
 
   return (
-    <div className="bg-darkerBlack w-fit p-12 rounded-r-50px flex">
+    <div className="bg-lighterBlack p-12 rounded-r-50px h-fit min-w-fit">
       <ul className="space-y-6">
         {menuSidebar.map((data) => (
           <li key={data.id}>
             <button
               className={`${
-                currentMenuCategory === data.text ? "text-gold" : "text-grey"
-              } text-lg hover:text-gold transition-all duration-300 ease-linear`}
-              onClick={() => setCurrentMenuCategory(data.text)}
+                currentMenuCategory.category === data.name
+                  ? "text-gold"
+                  : "text-grey"
+              } text-xl hover:text-gold transition-all duration-300 ease-linear`}
+              onClick={() =>
+                setCurrentMenuCategory({
+                  ...currentMenuCategory,
+                  category: data.name,
+                  menu: data.menus,
+                })
+              }
             >
-              {data.text} ({data.amount})
+              {data.name} ({data.menus.length})
             </button>
           </li>
         ))}

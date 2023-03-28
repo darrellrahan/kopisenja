@@ -62,6 +62,6 @@ export type FooterContact = {
 
 export type MenuSidebar = {
   id: number;
-  text: string;
-  amount: number;
+  name: string;
+  menus: MenuCardProps[];
 };
