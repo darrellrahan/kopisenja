@@ -73,9 +73,9 @@ export const homeMenuData: MenuCardProps[] = [
   },
   {
     id: 4,
-    url: "/menu/caramel-frappe",
+    url: "/menu/ice-caramel",
     img: "assets/svg/icecaramel.svg",
-    name: "Ice Caramel Frappe",
+    name: "Ice Caramel",
     price: 50000,
   },
   {
@@ -223,7 +223,7 @@ export const menuSidebar: MenuSidebar[] = [
       },
       {
         id: 2,
-        url: "/menu/premiumroast",
+        url: "/menu/premium-roast",
         img: "assets/svg/premiumroast.svg",
         name: "Premium Roast",
         price: 65000,
@@ -257,7 +257,7 @@ export const menuSidebar: MenuSidebar[] = [
       },
       {
         id: 3,
-        url: "/menu/longblack",
+        url: "/menu/long-black",
         img: "assets/svg/longblack.svg",
         name: "Long Black",
         price: 30000,
@@ -277,7 +277,7 @@ export const menuSidebar: MenuSidebar[] = [
     menus: [
       {
         id: 1,
-        url: "/menu/flatwhite",
+        url: "/menu/flat-white",
         img: "assets/svg/flatwhite.svg",
         name: "Flat White",
         price: 55000,
@@ -290,21 +290,21 @@ export const menuSidebar: MenuSidebar[] = [
     menus: [
       {
         id: 1,
-        url: "/menu/icecaramel",
+        url: "/menu/ice-caramel",
         img: "assets/svg/icecaramel.svg",
         name: "Ice Caramel",
         price: 50000,
       },
       {
         id: 2,
-        url: "/menu/cappucinocaramel",
+        url: "/menu/cappucino-caramel",
         img: "assets/svg/cappucinocaramel.svg",
         name: "Cappucino Caramel",
         price: 55000,
       },
       {
         id: 3,
-        url: "/menu/caramelmacchiato",
+        url: "/menu/caramel-macchiato",
         img: "assets/svg/caramelmacchiato.svg",
         name: "Iced Caramel Macchiato",
         price: 50000,
@@ -317,45 +317,65 @@ export const menuSidebar: MenuSidebar[] = [
     menus: [
       {
         id: 1,
-        url: "/menu/hotcappucino",
+        url: "/menu/hot-cappucino",
         img: "assets/svg/hotcappucino.svg",
         name: "Hot Cappucino",
         price: 40000,
       },
       {
         id: 2,
-        url: "/menu/icecappucino",
+        url: "/menu/ice-cappucino",
         img: "assets/svg/icecappucino.svg",
         name: "Ice Cappucino",
         price: 42000,
       },
       {
         id: 3,
-        url: "/menu/cappucinocaramel",
+        url: "/menu/cappucino-caramel",
         img: "assets/svg/cappucinocaramel.svg",
         name: "Cappucino Caramel",
         price: 55000,
       },
       {
         id: 4,
-        url: "/menu/cappucinovanilla",
+        url: "/menu/cappucino-vanilla",
         img: "assets/svg/cappucinovanilla.svg",
         name: "Cappucino Vanilla",
         price: 50000,
       },
       {
         id: 5,
-        url: "/menu/cappucinomocha",
+        url: "/menu/cappucino-mocha",
         img: "assets/svg/cappucinomocha.svg",
         name: "Cappucino Mocha",
         price: 45000,
       },
       {
         id: 6,
-        url: "/menu/cappucinoclassic",
+        url: "/menu/cappucino-classic",
         img: "assets/svg/cappucinoclassic.svg",
         name: "Cappucino Classic",
         price: 55000,
+      },
+    ],
+  },
+  {
+    id: 6,
+    name: "Mocha",
+    menus: [
+      {
+        id: 1,
+        url: "/menu/hot-mocha",
+        img: "assets/svg/hotmocha.svg",
+        name: "Hot Mocha",
+        price: 55000,
+      },
+      {
+        id: 2,
+        url: "/menu/cappucino-mocha",
+        img: "assets/svg/cappucinomocha.svg",
+        name: "Cappucino Mocha",
+        price: 45000,
       },
     ],
   },

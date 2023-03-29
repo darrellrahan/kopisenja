@@ -8,7 +8,7 @@ function Sidebar() {
   const { currentMenuCategory, setCurrentMenuCategory } = useGlobalContext();
 
   return (
-    <div className="bg-lighterBlack p-12 rounded-r-50px h-fit min-w-fit">
+    <div className="bg-lighterBlack p-12 rounded-br-50px h-fit min-w-fit">
       <ul className="space-y-6">
         {menuSidebar.map((data) => (
           <li key={data.id}>
