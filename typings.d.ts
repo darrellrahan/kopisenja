@@ -65,3 +65,17 @@ export type MenuSidebar = {
   name: string;
   menus: MenuCardProps[];
 };
+
+export type MenuProps = {
+  id: string;
+  img: string;
+  name: string;
+  desc: string;
+  price: number;
+};
+
+export type SingleMenuParams = {
+  params: {
+    id: string;
+  };
+};
