@@ -3,7 +3,7 @@ import React from "react";
 
 function Navigation() {
   return (
-    <div className="my-12 flex justify-center items-center gap-4 text-xl">
+    <div className="my-12 flex justify-center items-center gap-4 text-2xl">
       <Link
         href="/"
         className="transition-all duration-300 ease-linear hover:text-gold"
