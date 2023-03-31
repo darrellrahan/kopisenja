@@ -29,9 +29,15 @@ function Header() {
               >
                 <Link
                   href={item.url}
-                  className={usePathname() === item.url ? "text-gold" : ""}
+                  className={
+                    usePathname() === item.url ||
+                    (item.url === "/menu" && usePathname().includes("/menu"))
+                      ? "text-gold"
+                      : ""
+                  }
                 >
-                  {usePathname() === item.url ? (
+                  {usePathname() === item.url ||
+                  (item.url === "/menu" && usePathname().includes("/menu")) ? (
                     <span className="relative">
                       {item.text}
                       <span className="w-2 h-2 bg-gold absolute top-7 left-1/2 right-1/2 rounded-full" />
