@@ -51,10 +51,9 @@ function Footer() {
             <h3 className="font-extrabold text-lg">Kebijakan</h3>
             <ul className="space-y-2.5">
               {footerLegal.map((data) => (
-                <li>
+                <li key={data.id}>
                   <Link
                     href={data.url}
-                    key={data.id}
                     className="text-grey text-lg transition-all duration-300 ease-linear hover:text-gold"
                   >
                     {data.text}
@@ -67,10 +66,9 @@ function Footer() {
             <h3 className="font-extrabold text-lg">Tentang</h3>
             <ul className="space-y-2.5">
               {footerAbout.map((data) => (
-                <li>
+                <li key={data.id}>
                   <Link
                     href={data.url}
-                    key={data.id}
                     className="text-grey text-lg transition-all duration-300 ease-linear hover:text-gold"
                   >
                     {data.text}

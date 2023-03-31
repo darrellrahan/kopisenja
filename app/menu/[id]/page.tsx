@@ -1,12 +1,15 @@
+"use client";
+
 import Footer from "@/app/components/Footer";
 import Header from "@/app/components/Header";
 import { menu } from "@/app/data";
 import { SingleMenuParams } from "@/typings";
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 
 export default function page({ params: { id } }: SingleMenuParams) {
+  const [num, setNum] = useState(1);
   const data = menu.find((data) => data.id === id);
 
   if (!data) return <h1>{id} doesn't exist.</h1>;
@@ -34,7 +37,8 @@ export default function page({ params: { id } }: SingleMenuParams) {
             id="jumlah"
             className="text-black"
             min={1}
-            value={1}
+            value={num}
+            onChange={(e) => setNum(Number(e.target.value))}
           />
           <button>
             <AiOutlineShoppingCart /> <span>Tambahkan</span>
@@ -47,5 +51,5 @@ export default function page({ params: { id } }: SingleMenuParams) {
 }
 
 export function generateStaticParams() {
-  return menu.map((data) => ({ id: data.id.toString() }));
+  return menu.map((data) => ({ id: data.id }));
 }
