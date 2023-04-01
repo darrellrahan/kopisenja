@@ -11,7 +11,7 @@ function Hero() {
             Selamat datang di
           </h1>
           <Image
-            src="assets/svg/logo.svg"
+            src="/assets/svg/logo.svg"
             alt="Kopi Senja"
             width={200}
             height={200}

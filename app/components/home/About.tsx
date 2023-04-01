@@ -5,7 +5,7 @@ function About() {
   return (
     <div className="py-4 space-y-16">
       <Image
-        src="assets/svg/about-line.svg"
+        src="/assets/svg/about-line.svg"
         alt="Kopi Senja"
         width={1136}
         height={28}
@@ -13,7 +13,7 @@ function About() {
       />
       <div className="flex items-center gap-28">
         <Image
-          src="assets/svg/about-coffee.svg"
+          src="/assets/svg/about-coffee.svg"
           alt="Kopi Senja"
           width={369}
           height={637}
@@ -22,7 +22,7 @@ function About() {
           <div className="space-y-6">
             <h1 className="text-white font-bold text-8xl">Tentang</h1>
             <Image
-              src="assets/svg/logo.svg"
+              src="/assets/svg/logo.svg"
               alt="Kopi Senja"
               width={300}
               height={300}

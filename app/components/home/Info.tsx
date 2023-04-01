@@ -7,7 +7,7 @@ function Info() {
   return (
     <div className="py-8 space-y-8">
       <Image
-        src="assets/svg/info-line.svg"
+        src="/assets/svg/info-line.svg"
         alt="Kopi Senja"
         width={1208}
         height={56}
@@ -55,7 +55,7 @@ function Info() {
           </div>
         </div>
         <Image
-          src="assets/svg/info-img2.svg"
+          src="/assets/svg/info-img2.svg"
           alt="Info"
           width={620}
           height={561}

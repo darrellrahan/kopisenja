@@ -12,7 +12,7 @@ function Quote() {
   return (
     <div className="space-y-10 mb-32">
       <Image
-        src="assets/svg/quote-line.svg"
+        src="/assets/svg/quote-line.svg"
         alt="quote"
         width={1266}
         height={24}
@@ -26,7 +26,7 @@ function Quote() {
       </h1>
       <p className="text-gold font-bold text-center text-xl">- salam senja</p>
       <Image
-        src="assets/svg/quote-line.svg"
+        src="/assets/svg/quote-line.svg"
         alt="quote"
         width={1266}
         height={24}

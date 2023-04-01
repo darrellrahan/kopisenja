@@ -13,7 +13,7 @@ function Hero() {
     <div className="h-480px bg-menuHeroBg bg-norepeat bg-cover flex items-end pb-12">
       <div className="bg-darkerBlack90 flex items-center flex-col gap-4 py-4 px-12">
         <Image
-          src="assets/svg/quotation.svg"
+          src="/assets/svg/quotation.svg"
           alt="quotation"
           width={28}
           height={28}

@@ -7,7 +7,7 @@ function Team() {
   return (
     <div className="text-white space-y-8 py-8">
       <Image
-        src="assets/svg/tim-line.svg"
+        src="/assets/svg/tim-line.svg"
         alt="Kopi Senja"
         width={1239}
         height={58}

@@ -12,7 +12,7 @@ function Header() {
       <div className="logo-area">
         <Link href="/">
           <Image
-            src="assets/svg/logo.svg"
+            src="/assets/svg/logo.svg"
             width={132}
             height={132}
             alt="logo"

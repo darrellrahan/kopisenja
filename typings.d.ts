@@ -20,6 +20,7 @@ export type MenuCardProps = {
   name: string;
   img: string;
   price: number;
+  related?: boolean;
 };
 
 export type Location = {

@@ -28,6 +28,7 @@ module.exports = {
         menuHeroBg: "url('/assets/svg/menu-hero-bg.svg')",
       },
       spacing: {
+        "750px": "700px",
         "650px": "650px",
         "480px": "480px",
         "46.5%": "46.5%",

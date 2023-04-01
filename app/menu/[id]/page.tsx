@@ -1,15 +1,14 @@
-"use client";
-
 import Footer from "@/app/components/Footer";
 import Header from "@/app/components/Header";
+import LeftArea from "@/app/components/singleMenu/LeftArea";
+import Navigation from "@/app/components/singleMenu/Navigation";
+import Related from "@/app/components/singleMenu/Related";
+import RightArea from "@/app/components/singleMenu/RightArea";
 import { menu } from "@/app/data";
 import { SingleMenuParams } from "@/typings";
-import Image from "next/image";
-import React, { useState } from "react";
-import { AiOutlineShoppingCart } from "react-icons/ai";
+import React from "react";
 
 export default function page({ params: { id } }: SingleMenuParams) {
-  const [num, setNum] = useState(1);
   const data = menu.find((data) => data.id === id);
 
   if (!data) return <h1>{id} doesn't exist.</h1>;
@@ -17,34 +16,12 @@ export default function page({ params: { id } }: SingleMenuParams) {
   return (
     <main className="min-h-screen">
       <Header />
-      <div className="translate-y-16 flex">
-        <div>
-          <Image
-            src={data.img}
-            alt={data.name}
-            width={100}
-            height={100}
-            className="h-full object-cover"
-          />
-        </div>
-        <div>
-          <h1>{data.name}</h1>
-          <p>{data.desc}</p>
-          <h3>{data.price}</h3>
-          <label htmlFor="jumlah">Jumlah: </label>
-          <input
-            type="number"
-            id="jumlah"
-            className="text-black"
-            min={1}
-            value={num}
-            onChange={(e) => setNum(Number(e.target.value))}
-          />
-          <button>
-            <AiOutlineShoppingCart /> <span>Tambahkan</span>
-          </button>
-        </div>
+      <div className="flex justify-center gap-8 mx-16 mt-20">
+        <LeftArea data={data} />
+        <RightArea data={data} />
       </div>
+      <Navigation menu={data.name} url={`/menu/${data.id}`} />
+      <Related />
       <Footer />
     </main>
   );

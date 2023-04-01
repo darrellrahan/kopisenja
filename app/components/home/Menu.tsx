@@ -7,7 +7,7 @@ function Menu() {
   return (
     <div className="py-8 space-y-16 pb-0">
       <Image
-        src="assets/svg/menu-line.svg"
+        src="/assets/svg/menu-line.svg"
         alt="Kopi Senja"
         width={1179}
         height={28}
