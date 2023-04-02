@@ -1,8 +1,13 @@
+"use client";
+
+import { useGlobalContext } from "@/app/context";
 import { MenuProps } from "@/typings";
 import React from "react";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 
 function RightArea({ data }: { data: MenuProps }) {
+  const { setIsModal } = useGlobalContext();
+
   return (
     <div className="bg-lighterBlack rounded-lg p-8 space-y-10 text-xl w-750px">
       <div className="space-y-6">
@@ -25,7 +30,10 @@ function RightArea({ data }: { data: MenuProps }) {
         </div>
       </div>
       <div>
-        <button className="flex items-center gap-2 bg-gold text-white text-base py-2 px-6 rounded-35px transition-all duration-300 ease-linear hover:opacity-75">
+        <button
+          className="flex items-center gap-2 bg-gold text-white text-base py-2 px-6 rounded-35px transition-all duration-300 ease-linear hover:opacity-75"
+          onClick={() => setIsModal(true)}
+        >
           <span>
             <AiOutlineShoppingCart />
           </span>{" "}
