@@ -26,6 +26,7 @@ module.exports = {
           "linear-gradient(to right,#000 0%,#00000000 100%),url('/assets/svg/hero-bg.svg')",
         loginBg: "url('/assets/svg/login-bg.svg')",
         menuHeroBg: "url('/assets/svg/menu-hero-bg.svg')",
+        cartHeroBg: "url('/assets/svg/cart-hero-bg.svg')",
       },
       spacing: {
         "750px": "700px",
