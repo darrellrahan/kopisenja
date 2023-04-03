@@ -38,7 +38,7 @@ function Modal() {
             <span>Lanjutkan Belanja</span>
           </Link>
           <Link
-            href="/"
+            href="/cart"
             className="flex items-center gap-2 bg-gold text-white py-2 px-6 rounded-35px transition-all duration-300 ease-linear hover:opacity-75"
             onClick={() =>
               setTimeout(() => {
