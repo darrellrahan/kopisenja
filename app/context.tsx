@@ -1,6 +1,6 @@
 "use client";
 
-import { MenuCardProps } from "@/typings";
+import { MenuCardProps, MenuProps } from "@/typings";
 import React, { useContext, useState } from "react";
 import { menuSidebar } from "./data";
 
@@ -17,6 +17,15 @@ type GlobalContextType = {
   >;
   isModal: boolean;
   setIsModal: React.Dispatch<React.SetStateAction<boolean>>;
+  cart: { item: MenuProps; qty: number }[];
+  setCart: React.Dispatch<
+    React.SetStateAction<
+      {
+        item: MenuProps;
+        qty: number;
+      }[]
+    >
+  >;
 };
 
 const GlobalContext = React.createContext<GlobalContextType>({
@@ -24,6 +33,8 @@ const GlobalContext = React.createContext<GlobalContextType>({
   setCurrentMenuCategory() {},
   isModal: false,
   setIsModal() {},
+  cart: [],
+  setCart() {},
 });
 
 export function useGlobalContext() {
@@ -36,6 +47,7 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
     menu: menuSidebar[0].menus,
   });
   const [isModal, setIsModal] = useState(false);
+  const [cart, setCart] = useState<{ item: MenuProps; qty: number }[]>([]);
 
   return (
     <GlobalContext.Provider
@@ -44,6 +56,8 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
         setCurrentMenuCategory,
         isModal,
         setIsModal,
+        cart,
+        setCart,
       }}
     >
       {children}
