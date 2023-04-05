@@ -66,10 +66,14 @@ function Header() {
               key={item.id}
               href={item.url}
               className={`${
-                usePathname() === item.url ? "text-gold" : ""
+                usePathname() === item.url ||
+                (item.url === "/cart" && usePathname() === "/checkout")
+                  ? "text-gold"
+                  : ""
               } hover:text-gold transition-all duration-300 ease-linear`}
             >
-              {usePathname() === item.url ? (
+              {usePathname() === item.url ||
+              (item.url === "/cart" && usePathname() === "/checkout") ? (
                 <span className="relative">
                   <Icon />
                   <span className="w-2 h-2 bg-gold absolute top-9 left-3 rounded-full" />

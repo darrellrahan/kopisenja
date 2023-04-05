@@ -27,6 +27,7 @@ module.exports = {
         loginBg: "url('/assets/svg/login-bg.svg')",
         menuHeroBg: "url('/assets/svg/menu-hero-bg.svg')",
         cartHeroBg: "url('/assets/svg/cart-hero-bg.svg')",
+        checkoutHeroBg: "url('/assets/svg/checkout-hero-bg.svg')",
       },
       spacing: {
         "750px": "700px",
