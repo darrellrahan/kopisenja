@@ -28,7 +28,7 @@ function About() {
               height={300}
             />
           </div>
-          <p className="text-grey font-bold text-lg text-justify">
+          <p className="text-grey font-bold text-lg">
             Visi Kopi Senja adalah menjadi kafe terbaik di kota ini dan
             memberikan layanan yang baik bagi pelanggan. Kami berkomitmen untuk
             menggunakan bahan-bahan berkualitas tinggi. Kafe kami didesain

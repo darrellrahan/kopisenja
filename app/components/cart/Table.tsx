@@ -6,7 +6,7 @@ import React from "react";
 import { AiOutlineDelete } from "react-icons/ai";
 
 function Table() {
-  const { cart } = useGlobalContext();
+  const { cart, setCart } = useGlobalContext();
 
   return (
     <div>
@@ -42,7 +42,15 @@ function Table() {
                 Rp. {new Intl.NumberFormat().format(data.item.price * data.qty)}
               </td>
               <td className="border border-grey">
-                <button className="text-4xl hover:text-gold transition-all duration-300 ease-linear">
+                <button
+                  className="text-4xl hover:text-gold transition-all duration-300 ease-linear"
+                  onClick={() => {
+                    const filteredItems = cart.filter(
+                      (filterData) => filterData.item.id !== data.item.id
+                    );
+                    setCart(filteredItems);
+                  }}
+                >
                   <AiOutlineDelete />
                 </button>
               </td>
