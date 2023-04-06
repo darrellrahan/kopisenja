@@ -21,7 +21,7 @@ function Navigation() {
       <Link href="/checkout" className="text-gold">
         <span className="relative">
           Checkout
-          <span className="w-2 h-2 bg-gold absolute top-10 left-1/2 right-1/2 rounded-full" />
+          <span className="w-2 h-2 bg-gold absolute top-9 left-1/2 right-1/2 rounded-full" />
         </span>
       </Link>
     </div>

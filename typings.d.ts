@@ -80,3 +80,9 @@ export type SingleMenuParams = {
     id: string;
   };
 };
+
+export type BillingInput = {
+  id: string;
+  label: string;
+  type: React.HTMLInputTypeAttribute;
+};

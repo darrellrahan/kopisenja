@@ -1,4 +1,5 @@
 import {
+  BillingInput,
   FooterContact,
   FooterLink,
   FooterSocials,
@@ -547,4 +548,24 @@ export const related: MenuCardProps[] = [
     name: "Irish Coffee",
     price: 75000,
   },
+];
+
+export const billingInput: BillingInput[] = [
+  {
+    id: "name",
+    label: "Nama",
+    type: "text",
+  },
+  {
+    id: "alamat",
+    label: "Alamat",
+    type: "text",
+  },
+];
+
+export const billingInputGrid: BillingInput[] = [
+  { id: "telp", label: "No. Telp", type: "text" },
+  { id: "email", label: "Email", type: "email" },
+  { id: "city", label: "Kota", type: "text" },
+  { id: "postal", label: "Kode Pos", type: "text" },
 ];
