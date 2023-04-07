@@ -10,10 +10,10 @@ function Checkout() {
   return (
     <div className="flex flex-col items-end text-xl">
       <div>
-        <table className="border border-white">
+        <table>
           <tr>
-            <td className="border border-grey py-3 px-12 text-gold">Total</td>
-            <td className="border border-grey py-3 px-12">
+            <td className="border border-grey py-3 px-12">Total</td>
+            <td className="border border-grey py-3 px-12 text-gold">
               Rp.{" "}
               {new Intl.NumberFormat().format(
                 cart.reduce(

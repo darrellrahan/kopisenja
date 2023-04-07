@@ -10,7 +10,7 @@ function Table() {
 
   return (
     <div>
-      <table className="border border-white w-full text-center text-xl">
+      <table className="w-full text-center text-xl">
         <thead className="text-grey">
           <tr>
             <td className="border border-grey p-4">Foto</td>

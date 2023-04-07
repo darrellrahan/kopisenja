@@ -10,7 +10,7 @@ const pompiere = Pompiere({
 
 function Hero() {
   return (
-    <div className="h-480px bg-checkoutHeroBg bg-norepeat bg-cover flex items-end justify-center pb-12">
+    <div className="h-480px bg-menuHeroBg bg-norepeat bg-cover flex items-end justify-center pb-12">
       <div className="bg-darkerBlack90 flex items-center flex-col gap-4 py-4 px-12">
         <Image
           src="/assets/svg/quotation.svg"
