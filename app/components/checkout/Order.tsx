@@ -1,9 +1,13 @@
-import Image from "next/image";
+"use client";
+
+import { useGlobalContext } from "@/app/context";
 import React from "react";
 import { AiOutlineCreditCard } from "react-icons/ai";
-import { GiMoneyStack } from "react-icons/gi";
+import { BsCash } from "react-icons/bs";
 
 function Order() {
+  const { cart } = useGlobalContext();
+
   return (
     <div className="border border-white p-8 flex flex-col justify-between">
       <div className="space-y-8">
@@ -18,18 +22,26 @@ function Order() {
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td className="border border-grey p-3">Hot Cappucino</td>
-              <td className="border border-grey p-3 text-center">Rp. 40,000</td>
-            </tr>
-            <tr>
-              <td className="border border-grey p-3">Irish Coffee</td>
-              <td className="border border-grey p-3 text-center">Rp. 75,000</td>
-            </tr>
+            {cart.map((data) => (
+              <tr>
+                <td className="border border-grey p-3">{data.item.name}</td>
+                <td className="border border-grey p-3 text-center">
+                  Rp.{" "}
+                  {new Intl.NumberFormat().format(data.item.price * data.qty)}
+                </td>
+              </tr>
+            ))}
             <tr className="font-bold">
               <td className="border border-grey p-3">Total</td>
               <td className="border border-grey p-3 text-gold text-center">
-                Rp. 115,000
+                Rp.{" "}
+                {new Intl.NumberFormat().format(
+                  cart.reduce(
+                    (accumulator, currentValue) =>
+                      accumulator + currentValue.item.price * currentValue.qty,
+                    0
+                  )
+                )}
               </td>
             </tr>
           </tbody>
@@ -39,7 +51,7 @@ function Order() {
             <input type="radio" name="payment" id="cod" />
             <label htmlFor="cod">Cash On Delivery</label>
             <span className="text-2xl">
-              <GiMoneyStack />
+              <BsCash />
             </span>
           </div>
           <div className="flex items-center gap-2">

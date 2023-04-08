@@ -11,7 +11,7 @@ function Checkout() {
     <div className="flex flex-col items-end text-xl">
       <div>
         <table>
-          <tr>
+          <tr className="font-bold">
             <td className="border border-grey py-3 px-12">Total</td>
             <td className="border border-grey py-3 px-12 text-gold">
               Rp.{" "}
